@@ -2,8 +2,8 @@
 {
     enum WorkerLevel : int
     {
-        Junior = 1,
-        MidLevel = 2,
-        Senior = 3
+        Junior = 0,
+        MidLevel = 1,
+        Senior = 2
     }
 }
