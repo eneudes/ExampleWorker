@@ -41,13 +41,13 @@ namespace ExampleWorker
             }
 
             Console.WriteLine();
-            Console.WriteLine("Enter month and year to calculete income (MM/YYYY): ");
+            Console.Write("Enter month and year to calculete income (MM/YYYY): ");
             string monthAndYear = Console.ReadLine();
             int month = int.Parse(monthAndYear.Substring(0, 2));
             int year = int.Parse(monthAndYear.Substring(3));
             Console.WriteLine("Nome :" + worker.Name);
             Console.WriteLine("Department: " + worker.Department.Name);
-            Console.WriteLine("Income for" + monthAndYear + ": " + worker.Income(year, month));
+            Console.WriteLine("Income for: " + monthAndYear + ": " + worker.Income(year, month));
             
         }
     }

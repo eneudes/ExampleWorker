@@ -9,11 +9,11 @@ namespace ExampleWorker.Entities
         public WorkerLevel Level { get; set; }
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
-        public List<HourContract> Contracts { get; set; }
+        public List<HourContract> Contracts { get; set; } = new List<HourContract>();
 
         public Worker()
         {
-            Contracts = new List<HourContract>();
+            
         }
 
         public Worker(string name, WorkerLevel level, double baseSalary, Department department)
