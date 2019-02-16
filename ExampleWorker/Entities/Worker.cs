@@ -12,7 +12,8 @@ namespace ExampleWorker.Entities
         public List<HourContract> Contracts { get; set; }
 
         public Worker()
-        {        
+        {
+            Contracts = new List<HourContract>();
         }
 
         public Worker(string name, WorkerLevel level, double baseSalary, Department department)
